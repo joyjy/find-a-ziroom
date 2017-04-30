@@ -19,4 +19,5 @@ class ZiroomItem(scrapy.Item):
     type = scrapy.Field()
     distance = scrapy.Field()
     price = scrapy.Field()
+    direction = scrapy.Field()
     pass

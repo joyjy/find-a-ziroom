@@ -67,7 +67,7 @@ ROBOTSTXT_OBEY = True
 # Configure item pipelines
 # See http://scrapy.readthedocs.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
-    'ziroom.pipelines.ZiroomPipeline': 300,
+    'ziroom.pipelines.GoogleSheetPipeline': 300,
 }
 
 # Enable and configure the AutoThrottle extension (disabled by default)
