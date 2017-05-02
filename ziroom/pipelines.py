@@ -27,9 +27,9 @@ class GoogleSheetPipeline(object):
                         'version=v4')
         self.service = discovery.build('sheets', 'v4', http=http, discoveryServiceUrl=discoveryUrl)
         self.service.spreadsheets().values().clear(
-            spreadsheetId=spreadsheetId, range='Sheet1!A:J', body={}
+            spreadsheetId=spreadsheetId, range='Sheet1!A:K', body={}
         ).execute()
-        header = [u'距离',u'朝向',u'说明',u'价格',u'层高',u'链接',u'地铁',u'楼高',u'户型',u'面积']
+        header = [u'距离',u'朝向',u'说明',u'价格',u'层高',u'链接',u'地铁',u'楼高',u'户型',u'图片',u'面积']
         result = self.service.spreadsheets().values().append(
             spreadsheetId=spreadsheetId, range='Sheet1', valueInputOption='USER_ENTERED',
             body={ 'values': [header]}).execute()

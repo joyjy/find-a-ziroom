@@ -20,4 +20,5 @@ class ZiroomItem(scrapy.Item):
     distance = scrapy.Field()
     price = scrapy.Field()
     direction = scrapy.Field()
+    image = scrapy.Field()
     pass
